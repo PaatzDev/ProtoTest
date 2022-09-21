@@ -1,0 +1,30 @@
+syntax = "proto3";
+
+package your.service.v1;
+option go_package = "aero.skylinx/gen/go/your/service/v1";
+
+service MySuperService {
+    rpc ListNotams (ListNotamsInput) returns (ListNotamsOutput);
+    rpc AddNotam (AddNotamInput) returns (AddNotamOutput);
+}
+
+message ListNotamsInput {
+    int32 limit = 1;
+}
+
+message ListNotamsOutput {
+    repeated Notam notams = 1;
+}
+
+message AddNotamInput {
+    Notam notam = 1;
+}
+
+message AddNotamOutput {
+    Notam notam = 1;
+}
+
+message Notam {
+    string id = 1;
+    string message = 2;
+}
