@@ -1,7 +1,7 @@
 # GO PACKAGE
 
-    make in diffrent folder with go mod file
-    import it in proxy module by require and replace it
+make in diffrent folder with go mod file
+import it in proxy module by require and replace it
 
 # PROTOC COMMANDS
 
